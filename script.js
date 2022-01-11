@@ -4,9 +4,9 @@
 const arrayAnimals = ["Lion", "Tiger", "Shark", "Whale", "Snake", "Bear", "Crocodile"];
 
 //  Pondered.
-const pond = "pondered";
+const pond = "ponder";
 
-// Quotes
+// Quotes.
 const arrayQuotes = [
 "The greatest glory in living lies not in never falling, but in rising every time we fall.", 
 "The way to get started is to quit talking and begin doing.", 
@@ -15,3 +15,16 @@ const arrayQuotes = [
  "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough", 
  "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.", 
  "Life is what happens when you're busy making other plans."];
+
+ // The function.
+ const buildQuote = (arrAnimals, str, arrQuotes) => {
+
+    const randAnimal = arrAnimals[Math.floor(Math.random() * arrAnimals.length)];
+    const randQuote = arrQuotes[Math.floor(Math.random() * arrQuotes.length)];
+
+    return console.log(`${randAnimal} sits down to ${str}: "${randQuote}"`);    
+
+ };
+
+ // Run func.
+ buildQuote(arrayAnimals, pond, arrayQuotes);
