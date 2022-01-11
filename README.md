@@ -13,4 +13,4 @@ This is a part of <https://www.codecademy.com/> projects to create a small progr
 - Use command line
 - Develop locally on your computer
 
-![Codecademy logo] (/img/logoCode.jpg "Codecademy logo")
+---
